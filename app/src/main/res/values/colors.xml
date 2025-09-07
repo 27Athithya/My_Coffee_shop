@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="coffee_primary">#E3963E</color>
+    <color name="coffee_secondary">#A67B5B</color>
+
+    <color name="shadow_color">#40000000</color>
+    <color name="cream_white">#FBF6F0</color>
+    <color name="google_background">#D9D9D9</color>
+    <color name="blue">#1F00FD</color>
+    <color name="text_hint">#9E9E9E</color>
+
+    <color name="white_transparent">#99FFFFFF</color>
+    <color name="orange_button">#CFE3963E</color>
+    <color name="orange_active">#E3963E</color>
+    <color name="black_shadow">#40000000</color>
+
+    <color name="iconDark">#1D1B20</color>
+    <color name="navBarBackground">#E3963E</color>
+    <color name="iconBackground">#FEF7FF</color>
+    <color name="starGold">#C5A100</color>
+    <color name="productGold">#FFD700</color>
+    <color name="productSilver">#C7C0C0</color>
+    <color name="productPink">#FFEBEB</color>
+    <color name="coffeeBrown">#D4A56A</color>
+    <color name="imagePlaceholder">#D9D9D9</color>
+    <color name="categoryHighlight">#FFA50040</color>
+
+
+    <!-- Navigation Bar Color -->
+    <color name="nav_bar_orange">#E3963E</color>
+
+    <!-- Coffee Card Background -->
+    <color name="coffee_card_bg">#F4F1EA</color>
+
+    <!-- Quantity Button Background -->
+    <color name="quantity_button_bg">#D9A1A1</color>
+
+    <!-- Surface Colors -->
+    <color name="surface_light">#FEF7FF</color>
+    <color name="border_light">#F3F3F3</color>
+    <color name="border_light_alt">#F5F5F5</color>
+
+    <!-- Text Colors -->
+    <color name="on_background">#1D1B20</color>
+
+
+    <color name="gold">#FFD700</color>
+    <color name="orange_primary">#E3963E</color>
+    <color name="orange_border">#D4A56A</color>
+    <color name="light_gray">#D9D9D9</color>
+    <color name="medium_gray">#D9D9D9</color>
+    <color name="light_gray_transparent">#66D9D9D9</color>
+    <color name="dark_brown">#3E2723</color>
+    <color name="light_surface">#F3F3F3</color>
+    <color name="surface_variant">#F5F5F5</color>
+
+</resources>

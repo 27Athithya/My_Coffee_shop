@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity14">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/navigationBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Profile Image -->
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="153dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/profile_back"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profie"
+                app:layout_constraintBottom_toTopOf="@+id/profileTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Edit Profile Button -->
+
+            <!-- Profile Title -->
+            <ImageView
+                android:id="@+id/editProfileButton"
+                android:layout_width="53dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="338dp"
+                android:contentDescription="@string/edit_profile"
+                android:src="@drawable/edit"
+                app:layout_constraintBottom_toTopOf="@+id/personalInfoCard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/profileTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="9dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/profile_title"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/personalInfoHeader"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profileImage" />
+
+            <TextView
+                android:id="@+id/personalInfoHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="48dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/personal_info"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/personalInfoCard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.161"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileTitle"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/personalInfoCard"
+                android:layout_width="359dp"
+                android:layout_height="377dp"
+                android:layout_marginTop="48dp"
+                android:elevation="4dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/personalInfoHeader">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="396dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- First Name -->
+                    <TextView
+                        android:id="@+id/firstName"
+                        android:layout_width="326dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/first_name"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <!-- Last Name -->
+                    <TextView
+                        android:id="@+id/lastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="19dp"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/last_name"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <!-- Gender -->
+                    <TextView
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/gender"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <!-- Email -->
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/email"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <!-- Contact Number -->
+                    <TextView
+                        android:id="@+id/contactNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:layout_marginTop="28dp"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/contact_number"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <!-- Address -->
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/address"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <!-- Last Order ID -->
+                    <TextView
+                        android:id="@+id/lastOrderId"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:layout_marginTop="26dp"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/last_order_id"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="169dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginBottom="74dp"
+                        android:backgroundTint="@color/coffee_primary"
+                        android:text="@string/log_out" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="70dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginBottom="250dp"
+                app:layout_constraintBottom_toTopOf="@+id/personalInfoHeader"
+                app:layout_constraintEnd_toStartOf="@+id/profileImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back_btn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <!-- Navigation Bar -->
+    <include
+        android:id="@+id/navigationBar"
+        layout="@layout/activity_main10"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

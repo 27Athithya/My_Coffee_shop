@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity5">
+
+
+    <ImageView
+        android:id="@+id/iv_logo_top"
+        android:layout_width="393dp"
+        android:layout_height="393dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/coffee_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_get_start_middle"
+        android:layout_width="249dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="280dp"
+        android:backgroundTint="@color/coffee_primary"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/get_start"
+        android:textColor="@color/white"
+        android:textSize="31sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo_top" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
